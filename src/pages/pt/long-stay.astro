@@ -1,0 +1,49 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<MainLayout title="Hotel Heartland Imon - Reserva de Estadia Longa" currentLang="pt">
+  <Header />
+
+  <main class="container">
+    <h1>Formulário de Reserva de Estadia Longa</h1>
+    <form>
+      <label>Nome</label>
+      <input type="text" name="name" required />
+
+      <label>Endereço de e-mail</label>
+      <input type="email" name="email" required />
+
+      <label>Data de Check-in</label>
+      <input type="date" name="checkin" required />
+
+      <label>Data de Check-out</label>
+      <input type="date" name="checkout" required />
+
+      <label>Número de hóspedes</label>
+      <select name="guests" required>
+        <option value="1">1 pessoa</option>
+        <option value="2">2 pessoas</option>
+        <option value="3">3 pessoas</option>
+        <option value="4">4 pessoas</option>
+      </select>
+
+      <label>Quantidade de quartos</label>
+      <select name="rooms" required>
+        <option value="1">1 quarto</option>
+        <option value="2">2 quartos</option>
+        <option value="3">3 quartos</option>
+      </select>
+
+      <button type="submit" class="submit">Confirmar Reserva</button>
+    </form>
+
+    <div class="back-button">
+      <a href="/pt/">Voltar para a página inicial</a>
+    </div>
+  </main>
+
+  <Footer />
+</MainLayout>

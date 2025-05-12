@@ -1,0 +1,25 @@
+---
+// src/components/Header.astro
+import LanguageSwitcher from './LanguageSwitcher.astro';
+---
+<header class="header">
+  <img src="/images/hotel_logo.png" alt="ホテルロゴ" class="logo" />
+  <LanguageSwitcher />
+</header>
+
+<style>
+  .header {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 40px 0 60px;
+  }
+
+  .logo {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+</style>

@@ -1,0 +1,49 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<MainLayout title="连住预约" currentLang="zh">
+  <Header />
+
+  <main class="container">
+    <h1>连住预约</h1>
+    <form>
+      <label>姓名</label>
+      <input type="text" name="name" required />
+
+      <label>电子邮件</label>
+      <input type="email" name="email" required />
+
+      <label>入住日期</label>
+      <input type="date" name="checkin" required />
+
+      <label>退房日期</label>
+      <input type="date" name="checkout" required />
+
+      <label>入住人数</label>
+      <select name="guests">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+
+      <label>房间数</label>
+      <select name="rooms">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select>
+
+      <button type="submit">确认预约</button>
+    </form>
+
+    <div class="back-button">
+      <a href="/zh/">返回首页</a>
+    </div>
+  </main>
+
+  <Footer />
+</MainLayout>

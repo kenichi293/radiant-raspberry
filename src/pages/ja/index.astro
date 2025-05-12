@@ -1,0 +1,37 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+---
+
+<MainLayout title="ハートランドイモン ホテル" currentLang="ja">
+  <main class="container mx-auto px-4 py-12">
+    <section class="text-center mb-16">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">ハートランドイモンへようこそ</h1>
+      <p class="text-lg text-gray-600">特別な時間を過ごせる空間をお届けします</p>
+      <div class="mt-6 flex flex-col sm:flex-row justify-center gap-4">
+        <a href="/ja/pricing" class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">料金プラン</a>
+        <a href="/ja/long-stay" class="px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold rounded-lg shadow hover:scale-105 transition-transform">ロングステイ</a>
+      </div>
+    </section>
+
+    <section class="mb-16">
+      <img src="/images/hotel_room_sample.jpg" alt="ホテルの客室" class="rounded-lg shadow-lg mx-auto max-w-3xl">
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-12">
+      <div>
+        <h2 class="text-2xl font-bold mb-4 text-gray-800">お知らせ</h2>
+        <p class="text-gray-600">2025年5月 新しい客室プランを追加しました！</p>
+      </div>
+      <div>
+        <h2 class="text-2xl font-bold mb-4 text-gray-800">空室情報</h2>
+        <p class="text-gray-600">現在のところ、平日に空室がございます。</p>
+      </div>
+    </section>
+
+    <section class="mt-16">
+      <h2 class="text-2xl font-bold mb-4 text-gray-800">アクセス</h2>
+      <p class="text-gray-600 mb-4">〒133-0057 東京都江戸川区西小岩5-10-21</p>
+      <iframe src="https://www.google.com/maps?q=東京都江戸川区西小岩5-10-21&output=embed" allowfullscreen loading="lazy" width="100%" height="300" class="rounded-lg shadow"></iframe>
+    </section>
+  </main>
+</MainLayout>

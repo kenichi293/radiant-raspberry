@@ -1,0 +1,49 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<MainLayout title="하트랜드 이몬 호텔 - 장기 숙박 예약" currentLang="ko">
+  <Header />
+
+  <main class="container">
+    <h1>장기 숙박 예약 양식</h1>
+    <form>
+      <label>이름</label>
+      <input type="text" name="name" required />
+
+      <label>이메일 주소</label>
+      <input type="email" name="email" required />
+
+      <label>체크인 날짜</label>
+      <input type="date" name="checkin" required />
+
+      <label>체크아웃 날짜</label>
+      <input type="date" name="checkout" required />
+
+      <label>인원 수</label>
+      <select name="guests" required>
+        <option value="1">1명</option>
+        <option value="2">2명</option>
+        <option value="3">3명</option>
+        <option value="4">4명</option>
+      </select>
+
+      <label>객실 수</label>
+      <select name="rooms" required>
+        <option value="1">1개</option>
+        <option value="2">2개</option>
+        <option value="3">3개</option>
+      </select>
+
+      <button type="submit" class="submit">예약 확인</button>
+    </form>
+
+    <div class="back-button">
+      <a href="/ko/">메인 페이지로 돌아가기</a>
+    </div>
+  </main>
+
+  <Footer />
+</MainLayout>

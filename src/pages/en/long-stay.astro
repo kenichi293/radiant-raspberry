@@ -1,0 +1,46 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Long Stay Reservation" currentLang="en">
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Long Stay Reservation</h1>
+
+    <p class="mb-6 text-gray-700 text-center">
+      For guests planning to stay 3 nights or more, please fill out the form below.
+    </p>
+
+    <form class="max-w-xl mx-auto bg-white p-6 rounded shadow">
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2">Name</label>
+        <input type="text" class="w-full border px-3 py-2 rounded" placeholder="Your name" required>
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2">Email</label>
+        <input type="email" class="w-full border px-3 py-2 rounded" placeholder="your@example.com" required>
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2">Check-in Date</label>
+        <input type="date" class="w-full border px-3 py-2 rounded" required>
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2">Number of Nights (3 or more)</label>
+        <input type="number" min="3" class="w-full border px-3 py-2 rounded" required>
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-gray-700 font-bold mb-2">Special Requests</label>
+        <textarea class="w-full border px-3 py-2 rounded" rows="4"></textarea>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">
+          Submit
+        </button>
+      </div>
+    </form>
+  </main>
+</MainLayout>

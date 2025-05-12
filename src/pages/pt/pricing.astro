@@ -1,0 +1,87 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Plano de Preços" currentLang="pt">
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Plano de Preços</h1>
+
+    <!-- Seção: Descanso -->
+    <div class="price-section mb-10">
+      <div class="bg-blue-600 text-white py-3 px-4 rounded-t-lg">
+        <h2 class="text-xl font-bold">Descanso</h2>
+      </div>
+      <div class="bg-white rounded-b-lg shadow-md p-6">
+        <div class="price-card bg-gray-50 p-4 rounded-lg mb-4">
+          <div class="font-bold text-lg border-b pb-2 mb-3 text-blue-800">【Todos os Dias】</div>
+          <p class="font-medium">◇ Uso de até 2 horas entre 5:00 e 1:00</p>
+          <p class="text-xl font-bold text-red-600 ml-4 mt-1">¥4.000～¥6.900</p>
+          <p class="font-medium mt-4">◇ Uso de até 6 horas entre 5:00 e 1:00</p>
+          <p class="text-xl font-bold text-red-600 ml-4 mt-1">¥5.100～¥7.900</p>
+          <p class="text-sm text-gray-600 mt-3">※ Preço com impostos incluídos</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção: Horário de Serviço -->
+    <div class="price-section mb-10">
+      <div class="bg-green-600 text-white py-3 px-4 rounded-t-lg">
+        <h2 class="text-xl font-bold">Horário de Serviço (Free Time)</h2>
+      </div>
+      <div class="bg-white rounded-b-lg shadow-md p-6">
+        <div class="price-card bg-gray-50 p-4 rounded-lg mb-4">
+          <div class="font-bold text-lg border-b pb-2 mb-3 text-green-800">【Seg a Sex】</div>
+          <p class="font-medium">◇ Uso de até 13 horas entre 5:00 e 18:00</p>
+          <p class="text-xl font-bold text-red-600 ml-4 mt-1">¥5.100～¥7.900</p>
+        </div>
+        <div class="price-card bg-gray-50 p-4 rounded-lg">
+          <div class="font-bold text-lg border-b pb-2 mb-3 text-green-800">【Sáb, Dom e Feriado】</div>
+          <p class="font-medium">◇ Uso de até 10 horas entre 5:00 e 15:00</p>
+          <p class="text-xl font-bold text-red-600 ml-4 mt-1">¥5.100～¥7.900</p>
+          <p class="text-sm text-gray-600 mt-3">※ Preço com impostos incluídos</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção: Estadia -->
+    <div class="price-section mb-10">
+      <div class="bg-purple-600 text-white py-3 px-4 rounded-t-lg">
+        <h2 class="text-xl font-bold">Estadia</h2>
+      </div>
+      <div class="bg-white rounded-b-lg shadow-md p-6">
+        <div class="price-card bg-gray-50 p-4 rounded-lg mb-4">
+          <div class="font-bold text-lg border-b pb-2 mb-3 text-purple-800">【Dom a Sex e Feriado】</div>
+          <p class="font-medium">◇ Uso de até 18 horas entre 17:00 e 11:00</p>
+          <p class="text-xl font-bold text-red-600 ml-4 mt-1">¥7.700～¥11.000</p>
+        </div>
+        <div class="price-card bg-gray-50 p-4 rounded-lg">
+          <div class="font-bold text-lg border-b pb-2 mb-3 text-purple-800">【Sáb e Véspera de Feriado】</div>
+          <p class="font-medium">◇ Uso de até 11 horas entre 18:00 e 10:00</p>
+          <p class="text-xl font-bold text-red-600 ml-4 mt-1">¥7.700～¥11.000</p>
+          <p class="text-sm text-gray-600 mt-3">※ Preço com impostos incluídos</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção: Meia-noite -->
+    <div class="price-section mb-10">
+      <div class="bg-indigo-600 text-white py-3 px-4 rounded-t-lg">
+        <h2 class="text-xl font-bold">Meia-noite</h2>
+      </div>
+      <div class="bg-white rounded-b-lg shadow-md p-6">
+        <div class="price-card bg-gray-50 p-4 rounded-lg">
+          <div class="font-bold text-lg border-b pb-2 mb-3 text-indigo-800">【Todos os Dias】</div>
+          <p class="font-medium">◇ Uso de até 11 horas entre 1:00 e 12:00</p>
+          <p class="text-xl font-bold text-red-600 ml-4 mt-1">¥7.700～¥11.000</p>
+          <p class="text-sm text-gray-600 mt-3">※ Preço com impostos incluídos</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rodapé informativo -->
+    <div class="text-center text-gray-600 text-sm mt-8 mb-4">
+      <p>Os preços podem variar dependendo da época e do tipo de quarto.</p>
+      <p>Para mais detalhes, entre em contato conosco diretamente.</p>
+    </div>
+  </main>
+</MainLayout>

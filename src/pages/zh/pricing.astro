@@ -1,0 +1,101 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+---
+
+<MainLayout title="房价方案" currentLang="zh">
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">房价方案</h1>
+
+    <!-- 休息 -->
+    <div class="price-section mb-10">
+      <div class="bg-blue-600 text-white py-3 px-4 rounded-t-lg">
+        <h2 class="text-xl font-bold">休息</h2>
+      </div>
+      <div class="bg-white rounded-b-lg shadow-md p-6">
+        <div class="price-card bg-gray-50 p-4 rounded-lg mb-4">
+          <div class="font-bold text-lg border-b pb-2 mb-3 text-blue-800">【全日】</div>
+          <div class="mb-4">
+            <p class="font-medium">◇5:00～次日1:00之间最多使用2小时</p>
+            <p class="text-xl font-bold text-red-600 ml-4 mt-1">￥4,000～￥6,900</p>
+          </div>
+          <div class="mb-2">
+            <p class="font-medium">◇5:00～次日1:00之间最多使用6小时</p>
+            <p class="text-xl font-bold text-red-600 ml-4 mt-1">￥5,100～￥7,900</p>
+          </div>
+          <p class="text-sm text-gray-600 mt-3">※含税价格</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 服务时间 -->
+    <div class="price-section mb-10">
+      <div class="bg-green-600 text-white py-3 px-4 rounded-t-lg">
+        <h2 class="text-xl font-bold">服务时间（自由时间）</h2>
+      </div>
+      <div class="bg-white rounded-b-lg shadow-md p-6">
+        <div class="price-card bg-gray-50 p-4 rounded-lg mb-4">
+          <div class="font-bold text-lg border-b pb-2 mb-3 text-green-800">【周一～周五】</div>
+          <div class="mb-4">
+            <p class="font-medium">◇5:00～18:00之间最多使用13小时</p>
+            <p class="text-xl font-bold text-red-600 ml-4 mt-1">￥5,100～￥7,900</p>
+          </div>
+        </div>
+        <div class="price-card bg-gray-50 p-4 rounded-lg">
+          <div class="font-bold text-lg border-b pb-2 mb-3 text-green-800">【周六、日及节假日】</div>
+          <div class="mb-2">
+            <p class="font-medium">◇5:00～15:00之间最多使用10小时</p>
+            <p class="text-xl font-bold text-red-600 ml-4 mt-1">￥5,100～￥7,900</p>
+          </div>
+          <p class="text-sm text-gray-600 mt-3">※含税价格</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 住宿 -->
+    <div class="price-section mb-10">
+      <div class="bg-purple-600 text-white py-3 px-4 rounded-t-lg">
+        <h2 class="text-xl font-bold">住宿</h2>
+      </div>
+      <div class="bg-white rounded-b-lg shadow-md p-6">
+        <div class="price-card bg-gray-50 p-4 rounded-lg mb-4">
+          <div class="font-bold text-lg border-b pb-2 mb-3 text-purple-800">【周日～周五、节假日】</div>
+          <div class="mb-4">
+            <p class="font-medium">◇17:00～次日11:00之间最多使用18小时</p>
+            <p class="text-xl font-bold text-red-600 ml-4 mt-1">￥7,700～￥11,000</p>
+          </div>
+        </div>
+        <div class="price-card bg-gray-50 p-4 rounded-lg">
+          <div class="font-bold text-lg border-b pb-2 mb-3 text-purple-800">【周六及节假日前日】</div>
+          <div class="mb-2">
+            <p class="font-medium">◇18:00～次日10:00之间最多使用11小时</p>
+            <p class="text-xl font-bold text-red-600 ml-4 mt-1">￥7,700～￥11,000</p>
+          </div>
+          <p class="text-sm text-gray-600 mt-3">※含税价格</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 午夜 -->
+    <div class="price-section mb-10">
+      <div class="bg-indigo-600 text-white py-3 px-4 rounded-t-lg">
+        <h2 class="text-xl font-bold">午夜方案</h2>
+      </div>
+      <div class="bg-white rounded-b-lg shadow-md p-6">
+        <div class="price-card bg-gray-50 p-4 rounded-lg">
+          <div class="font-bold text-lg border-b pb-2 mb-3 text-indigo-800">【全日】</div>
+          <div class="mb-2">
+            <p class="font-medium">◇1:00～12:00之间最多使用11小时</p>
+            <p class="text-xl font-bold text-red-600 ml-4 mt-1">￥7,700～￥11,000</p>
+          </div>
+          <p class="text-sm text-gray-600 mt-3">※含税价格</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 備考 -->
+    <div class="text-center text-gray-600 text-sm mt-8 mb-4">
+      <p>价格可能根据季节和房型有所变动。</p>
+      <p>详情请直接联系我们。</p>
+    </div>
+  </main>
+</MainLayout>

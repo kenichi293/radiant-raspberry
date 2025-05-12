@@ -1,0 +1,91 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+---
+
+<MainLayout title="料金プラン" currentLang="ja">
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">料金プラン</h1>
+
+    <!-- 休憩 -->
+    <div class="price-section mb-10">
+      <div class="bg-blue-600 text-white py-3 px-4 rounded-t-lg">
+        <h2 class="text-xl font-bold">休憩</h2>
+      </div>
+      <div class="bg-white rounded-b-lg shadow-md p-6">
+        <div class="price-card bg-gray-50 p-4 rounded-lg mb-4">
+          <div class="font-bold text-lg border-b pb-2 mb-3 text-blue-800">【全日】</div>
+          <p class="font-medium">◇5:00～翌1:00の間で最大2時間ご利用</p>
+          <p class="text-xl font-bold text-red-600 ml-4 mt-1">￥4,000～￥6,900</p>
+          <p class="font-medium mt-4">◇5:00～翌1:00の間で最大6時間ご利用</p>
+          <p class="text-xl font-bold text-red-600 ml-4 mt-1">￥5,100～￥7,900</p>
+          <p class="text-sm text-gray-600 mt-3">※表示金額は税込です</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- サービスタイム -->
+    <div class="price-section mb-10">
+      <div class="bg-green-600 text-white py-3 px-4 rounded-t-lg">
+        <h2 class="text-xl font-bold">サービスタイム（フリータイム）</h2>
+      </div>
+      <div class="bg-white rounded-b-lg shadow-md p-6">
+        <div class="price-card bg-gray-50 p-4 rounded-lg mb-4">
+          <div class="font-bold text-lg border-b pb-2 mb-3 text-green-800">【月～金】</div>
+          <p class="font-medium">◇5:00～18:00の間で最大13時間ご利用</p>
+          <p class="text-xl font-bold text-red-600 ml-4 mt-1">￥5,100～￥7,900</p>
+        </div>
+        <div class="price-card bg-gray-50 p-4 rounded-lg">
+          <div class="font-bold text-lg border-b pb-2 mb-3 text-green-800">【土・日・祝】</div>
+          <p class="font-medium">◇5:00～15:00の間で最大10時間ご利用</p>
+          <p class="text-xl font-bold text-red-600 ml-4 mt-1">￥5,100～￥7,900</p>
+          <p class="text-sm text-gray-600 mt-3">※表示金額は税込です</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 宿泊 -->
+    <div class="price-section mb-10">
+      <div class="bg-purple-600 text-white py-3 px-4 rounded-t-lg">
+        <h2 class="text-xl font-bold">宿泊</h2>
+      </div>
+      <div class="bg-white rounded-b-lg shadow-md p-6">
+        <div class="price-card bg-gray-50 p-4 rounded-lg mb-4">
+          <div class="font-bold text-lg border-b pb-2 mb-3 text-purple-800">【日～金・祝】</div>
+          <p class="font-medium">◇17:00～翌11:00の間で最大18時間ご利用</p>
+          <p class="text-xl font-bold text-red-600 ml-4 mt-1">￥7,700～￥11,000</p>
+        </div>
+        <div class="price-card bg-gray-50 p-4 rounded-lg">
+          <div class="font-bold text-lg border-b pb-2 mb-3 text-purple-800">【土・祝前】</div>
+          <p class="font-medium">◇18:00～翌10:00の間で最大11時間ご利用</p>
+          <p class="text-xl font-bold text-red-600 ml-4 mt-1">￥7,700～￥11,000</p>
+          <p class="text-sm text-gray-600 mt-3">※表示金額は税込です</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ミッドナイト -->
+    <div class="price-section mb-10">
+      <div class="bg-indigo-600 text-white py-3 px-4 rounded-t-lg">
+        <h2 class="text-xl font-bold">ミッドナイト</h2>
+      </div>
+      <div class="bg-white rounded-b-lg shadow-md p-6">
+        <div class="price-card bg-gray-50 p-4 rounded-lg">
+          <div class="font-bold text-lg border-b pb-2 mb-3 text-indigo-800">【全日】</div>
+          <p class="font-medium">◇1:00～12:00の間で最大11時間ご利用</p>
+          <p class="text-xl font-bold text-red-600 ml-4 mt-1">￥7,700～￥11,000</p>
+          <p class="text-sm text-gray-600 mt-3">※表示金額は税込です</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center text-gray-600 text-sm mt-8 mb-4">
+      <p>料金は時期やお部屋タイプによって変動する場合があります。</p>
+      <p>詳細は直接お問い合わせください。</p>
+    </div>
+
+    <!-- 🏠 ホームに戻るボタン -->
+    <a href="/ja/" class="block mt-8 text-center text-blue-600 underline hover:text-blue-800">
+      🏠 ホームに戻る
+    </a>
+  </main>
+</MainLayout>
