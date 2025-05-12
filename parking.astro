@@ -1,0 +1,11 @@
+---
+import ParkingSimulator from '../../components/ParkingSimulator';
+import MainLayout from '../../layouts/MainLayout.astro';
+import "../../styles/global.css";
+---
+
+<MainLayout title="駐車場収益シミュレーター" currentLang="ja">
+  <main class="min-h-screen p-6">
+    <ParkingSimulator client:load />
+  </main>
+</MainLayout>
