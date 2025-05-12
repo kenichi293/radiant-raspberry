@@ -1,8 +1,8 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
-import react from '@astrojs/react'; // ✅ React を追加！
+import react from '@astrojs/react';
+import tailwind from '@astrojs/tailwind';
 
-// https://astro.build/config
 export default defineConfig({
-  integrations: [react()] // ✅ React 統合を設定！
+  integrations: [react(), tailwind()],
+  output: 'static', // ← これが最重要です！！
 });
